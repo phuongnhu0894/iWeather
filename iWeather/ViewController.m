@@ -23,14 +23,14 @@
     NSArray* locations;
     NSArray* photos;
     NSArray* quotes;
-    BOOL nhietdo;
+    BOOL isCelcius;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     quotes = @[@"Windy",@"Sunny",@"Foggy",@"Rainy"];
     locations = @[@"Ha Noi", @"Ho Chi Minh", @"New York", @"London"];
     photos=@[@"windy",@"sunny",@"foggy",@"rainy"];
-    nhietdo = true;
+    isCelcius = true;
 }
 
 
@@ -49,16 +49,16 @@
 }
 - (IBAction)updateDegree:(id)sender {
     
-    if (nhietdo==true ) {
+    if (isCelcius==true ) {
         _degree.text=@"F";
-        [_temperature setTitle:[NSString stringWithFormat:@"%.1f",([_temperature.titleLabel.text intValue]*1.8)+32] forState:UIControlStateNormal]; //Chuyen doi do C thanh do F
+        [_temperature setTitle:[NSString stringWithFormat:@"%.1f",([_temperature.titleLabel.text floatValue]*1.8)+32] forState:UIControlStateNormal]; //Chuyen doi do C thanh do F
         
-        nhietdo =false;
+        isCelcius =false;
     } else {
         _degree.text=@"C";
-        [_temperature setTitle:[NSString stringWithFormat:@"%.1f",([_temperature.titleLabel.text intValue]-32)/1.8] forState:UIControlStateNormal]; //Chuyen doi do F thanh do C
+        [_temperature setTitle:[NSString stringWithFormat:@"%.1f",([_temperature.titleLabel.text floatValue]-32)/1.8] forState:UIControlStateNormal]; //Chuyen doi do F thanh do C
 
-        nhietdo =true;
+        isCelcius =true;
     }
 }
 
