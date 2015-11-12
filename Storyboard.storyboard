@@ -116,6 +116,7 @@
                             <constraint firstItem="knt-E5-KLE" firstAttribute="leading" secondItem="Djs-m3-Wlw" secondAttribute="leadingMargin" id="BuD-lA-B5o"/>
                             <constraint firstItem="gMz-pA-m7E" firstAttribute="centerX" secondItem="Djs-m3-Wlw" secondAttribute="centerX" id="HuX-EI-peq"/>
                             <constraint firstItem="gf7-Sq-dfA" firstAttribute="centerX" secondItem="Djs-m3-Wlw" secondAttribute="centerX" id="I0o-Zs-JEb"/>
+                            <constraint firstItem="pu3-0U-BTZ" firstAttribute="top" secondItem="qHV-es-AmS" secondAttribute="top" constant="17" id="Kv2-dV-Xyr"/>
                             <constraint firstItem="vGF-t0-YG9" firstAttribute="centerX" secondItem="Djs-m3-Wlw" secondAttribute="centerX" id="MwH-Vu-Ccq"/>
                             <constraint firstItem="pu3-0U-BTZ" firstAttribute="leading" secondItem="vGF-t0-YG9" secondAttribute="trailing" id="Ny4-Y8-qdo"/>
                             <constraint firstItem="gf7-Sq-dfA" firstAttribute="centerX" secondItem="Djs-m3-Wlw" secondAttribute="centerX" id="QvK-D0-be2"/>
@@ -135,6 +136,7 @@
                             <mask key="constraints">
                                 <exclude reference="MwH-Vu-Ccq"/>
                                 <exclude reference="v6h-5D-XWQ"/>
+                                <exclude reference="g1H-5b-Cu8"/>
                                 <exclude reference="SZ1-5Q-1YH"/>
                                 <exclude reference="f2j-P2-18b"/>
                                 <exclude reference="72v-Dh-LEj"/>
